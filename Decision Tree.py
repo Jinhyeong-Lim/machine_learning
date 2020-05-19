@@ -15,6 +15,7 @@ os.environ["PATH"]+=os.pathsep + 'c:/Program Files (x86)/Graphviz2.38/bin/'
 iris = load_iris()
 x=iris.data
 y=iris.target
+print(y)
 df = pd.DataFrame(x, columns=['sepal_width(cm)', 'sepal_length(cm)', 'petal_width(cm)', 'petal_length(cm)'])
 #print(df)
 
