@@ -12,8 +12,8 @@
 
 ##### Cost fuction(비용 함수) : 오차(Loss)에 대한 식, 함수의 값을 최소화 하는 목적을 가진 함수
 > - Error(Loss) = h(x) - y
-> - Square Error = (h(x)-y)^2
-> - Mean Squared Error = (1/n) * Σ (h(x)-y)^2 (오차 제곱값들의 평균)
+> - Square Error(Loss fuction) = (h(x)-y)^2
+> - Mean Squared Error(Cost fuction) = (1/n) * Σ (h(x)-y)^2 (오차 제곱값들의 평균)
  
  
  ##### Optimizer(옵티마이저) : 경사 하강법(Gradient Descent)
