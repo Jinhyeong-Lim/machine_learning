@@ -2,7 +2,7 @@
 
 
 ### Linear Regression(선형 회귀) 
-##### 회귀식을 만들어 새로 들어온 데이터 값을 예측, 독립변수(원인)과 종속변수(결과)가 들어가는 식을 구하는 과정
+##### 회귀식을 만들어 새로 들어온 데이터 값을 예측, 독립변수(원인)과 종속변수(결과)가 들어가는 식을 구하는 과정(연속형 종속변수)
 
 ![1](https://user-images.githubusercontent.com/64317686/114910809-4b726c00-9e59-11eb-95b2-bd8d7eb9e78a.JPG)
 
@@ -24,3 +24,13 @@
  >  ![2](https://user-images.githubusercontent.com/64317686/114914162-f33d6900-9e5c-11eb-8377-574614f9551a.JPG)
  > <br>
  > - 미분을 통해 cost를 최소화 하는 w 값을 업데이트, 접선의 기울기가 0이 될때(수렴할 때) 까지 반복한다.
+ 
+
+
+### Logistic Regression
+##### 연속형 종속변수가 아닌 범주형 변수가 들어갈 때 쓰는 모델, 데이터가 특정 분류로 나뉘기 대문에 분류(Classification) 기법으로 볼 수 있다.
+
+![1](https://user-images.githubusercontent.com/64317686/115115039-33235e00-9fcd-11eb-8963-ba163195a240.JPG)
+> - 독립 변수 x가 [-∞,∞] 어느 숫자이든 상관 없이 종속 변수 y의 결과가 범위[0,1]로 제한된다. <br>
+> - 가장 대표적인 sigmoid 함수는 활성화 함수(Activation Function)으로 사용 된다.
+
