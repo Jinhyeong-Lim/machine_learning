@@ -1,7 +1,7 @@
 # Machine-Learing-
 
 
-### Linear Regression(선형 회귀) 
+### Linear Regression (선형 회귀) 
 ##### 회귀식을 만들어 새로 들어온 데이터 값을 예측, 독립변수(원인)과 종속변수(결과)가 들어가는 식을 구하는 과정(연속형 종속변수)
 
 ![1](https://user-images.githubusercontent.com/64317686/114910809-4b726c00-9e59-11eb-95b2-bd8d7eb9e78a.JPG)
@@ -27,10 +27,16 @@
  
 
 
-### Logistic Regression
+### Logistic Regression (로지스틱 회귀)
 ##### 연속형 종속변수가 아닌 범주형 변수가 들어갈 때 쓰는 모델, 데이터가 특정 분류로 나뉘기 대문에 분류(Classification) 기법으로 볼 수 있다.
 
 ![1](https://user-images.githubusercontent.com/64317686/115115039-33235e00-9fcd-11eb-8963-ba163195a240.JPG)
 > - 독립 변수 x가 [-∞,∞] 어느 숫자이든 상관 없이 종속 변수 y의 결과가 범위[0,1]로 제한된다. <br>
 > - 가장 대표적인 sigmoid 함수는 활성화 함수(Activation Function)으로 사용 된다.
 
+### KNN(k-nearest neighbor) 최근접 이웃 알고리즘
+##### 새로운 데이터가 주어지면 주변(이웃) k(홀수) 개의 데이터를 살펴본 뒤 더 많은 데이터가 포함된 범주로 분류(Classification) 해준다.
+![1](https://user-images.githubusercontent.com/64317686/115141837-628fa480-a079-11eb-92cc-d8aec4b49acd.JPG)
+<br>
+**장점** : 따로 훈련이 필요 없고(저사양 고성능) 노이즈 값 영향x, 데이터가 많으면 좋은 성능을 낸다. <br>
+**단점** : 데이터가 고차원일 수록 성능 저하, k값에 따른 overfitting, underfitting 문제가 있다. -> k값 에 대한 연구가 필요하다, 새로운 데이터와 나머지 데이터 사이 거리 계산 시간이 오래걸린다.
